@@ -62,8 +62,6 @@
     margin-bottom: 30px;
   }
 
-  .cont{
-    
-  }
+  
   
   </style>
