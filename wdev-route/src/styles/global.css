@@ -39,14 +39,8 @@
     flex-direction: column;
   }
 
-  @media (min-width: 700px) {
-    .videos{
-      flex-direction: row;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-    .video{
-      margin-right: 20px;
-      width: 300px;
-    }
-  }
+  h1{
+    color: var(--color-text-title);
+    margin: 40px 0;
+    font-size: 30px;
+}

@@ -33,6 +33,9 @@ footer{
    display: flex;
    justify-content: center;
    align-items: center;
+   position: fixed;
+   /* bottom: 0; */
+   
 }
 
 .socialLink{

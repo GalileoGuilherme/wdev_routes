@@ -6,7 +6,7 @@
        <section class="videos">
         <div v-for="(video, index) in videos" class="video" :key="index">
             <a :href="video.link" target="_blank">
-                <img :src="video.thumb" :alt="video.title">
+                <div><img :src="video.thumb" :alt="video.title"></div>
                 <div class="video-title">{{ video.title }}</div>            
             </a>
         </div>
@@ -47,27 +47,46 @@ main{
 .video{
     width: 80%;
     margin-bottom: 30px;
+    align-items: center;
+    align-content: center;
 }
 .video a{
     color: var(--color-text-dark);
     font-weight: 600;
     text-align: center;
+    
 }
 .videos{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    
 }
 .video img{
     width: 50%;
     align-items: center;
     align-content: center;
+    
 }
 h1{
     color: var(--color-text-title);
     margin: 40px 0;
     font-size: 30px;
 }
+@media (min-width: 700px) {
+    .videos{
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .video{
+      align-items: center;
+      align-content: center;
+      width: 90%;
+      margin-bottom: 90px;
+    }
+  }
 
 
 

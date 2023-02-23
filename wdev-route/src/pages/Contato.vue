@@ -1,6 +1,6 @@
 <template>
     <main>
-      <section class="container">
+      <section class="cont">
           <h1>Contato</h1>
           <section class="contacts">
 
@@ -38,16 +38,20 @@
   
   main{
       align-items: center;
+      
   }
   .contacts{
       margin-bottom: 40px;
       color: var(--color-text-dark);
+      /* align-items: center; */
+      /* align-content: center; */
   }
   .contact-title{
     font-weight: 600;
     font-size: 18px;
     /* margin-bottom: 10px; */
-    padding: 10px 0;
+    /* padding: 10px 0; */
+    
   }
 
   .contact a{
@@ -55,7 +59,11 @@
   }
 
   .contact{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .cont{
+    
   }
   
   </style>
