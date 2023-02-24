@@ -1,8 +1,7 @@
 
 <template>
   <div id="app">
-    <Header/>
-    <!-- <Home/> -->
+    <Header/>    
     <router-view path="$router.key"/>
     <Footer/>
     

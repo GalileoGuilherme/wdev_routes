@@ -32,7 +32,18 @@ export default {
             this.videos = response.data;
         });
     }
+//     Esta é uma função mounted() definida no objeto Vue que é executada automaticamente quando o componente
+// é montado. A função utiliza a biblioteca Axios para fazer uma solicitação GET para um arquivo videos.json no servidor.
 
+// A função api.get() recebe a rota para o arquivo videos.json como argumento e retorna uma Promessa.
+// Quando a Promessa é resolvida, o método .then() é chamado com o objeto de resposta da solicitação como argumento.
+
+// Dentro do .then(), o conteúdo da resposta é atribuído à propriedade videos do componente usando this.videos = response.data.
+// O objeto response contém uma propriedade data que contém os dados da resposta da solicitação, neste caso, um objeto JSON com
+// informações sobre os vídeos.
+
+// Em resumo, esta função é responsável por fazer uma solicitação HTTP para um arquivo JSON que contém informações
+// sobre vídeos e atualizar o estado do componente com essas informações para que possam ser renderizadas na lista de vídeos.
 }
 </script>
 
